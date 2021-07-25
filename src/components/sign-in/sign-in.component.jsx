@@ -1,6 +1,6 @@
 import React from 'react';
 import './sign-in.style.scss';
-import { signInWithGoogle } from '../../firebase/firebase.utils'
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils'
 
 class SignIn extends React.Component {
     constructor(props) {
@@ -12,9 +12,16 @@ class SignIn extends React.Component {
         }
     }
 
-    handleSubmit = event => {
+    handleSubmit = async event => {
         event.preventDefault();
-        this.setState({ email: '', pass: '' });
+        const { email, pass } = this.state;
+        try {
+            await auth.signInWithEmailAndPassword(email, pass);
+            this.setState({ email: '', pass: '' });
+        } catch (error) {
+            console.log(error);
+        }
+
     }
     handleChange = event => {
         const { value, name } = event.target;
@@ -37,5 +44,5 @@ class SignIn extends React.Component {
         )
     }
 }
- 
+
 export default SignIn;
