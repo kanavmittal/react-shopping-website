@@ -5,7 +5,7 @@ import SignUp from '../../components/sign-up/sign-up.comonent';
 
 
 const Auth = () => (
-    <div className="sign-in-and-sign-up">
+    <div className="flex flex-wrap">
         <SignIn></SignIn>
         <SignUp></SignUp>
     </div>
