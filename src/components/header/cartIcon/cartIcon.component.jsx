@@ -7,7 +7,7 @@ const CartIcon = ({ toggleCartHidden }) => (
         <FontAwesomeIcon icon="shopping-bag" size="2x" />
         <span className="absolute text-xs font-bold pt-3 text-white">0</span>
     </div>
-)
+)  
 const mapDispatchToProps = dispatch => ({
     toggleCartHidden: () => dispatch(toggleCartHidden())
 })

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 import Shop_Data from "./shop.data.js";
-import CollectionPreview from "../../../components/preview-collection/preview-collection.component.jsx"
+import CollectionPreview from "../../components/preview-collection/preview-collection.component.jsx"
 class ShopsPage extends React.Component{
     constructor(props){
         super(props);
