@@ -58,6 +58,12 @@ const SHOP_DATA = [
         imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
         price: 16,
       },
+      {
+        id: 10,
+        name: "test",
+        imageUrl: "https://i.ibb.co/X2VJP2W/blue-snapback.png",
+        price: 100,
+      },
     ],
   },
   {

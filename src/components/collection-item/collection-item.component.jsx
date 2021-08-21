@@ -5,7 +5,7 @@ import { addItem } from "../../redux/cart/cart.actions";
 const CollectionItem = ({ item, addItem }) => {
     const { id, name, price, imageUrl } = item;
     return (
-        <div className="flex flex-col w-full items-center border-2 py-5 px-0 pb-15 rounded-3xl border-gray-100">
+        <div className="flex flex-col w-full items-center border-2 py-5 px-0 pb-15 rounded-3xl border-gray-100 ">
             <div
                 className="h-72 w-60 bg-cover" style={{ backgroundImage: `url(${imageUrl})` }}
             ></div>
